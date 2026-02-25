@@ -28,12 +28,20 @@ Open `index.html` in a web browser to view the website.
 
 ## Troubleshooting
 
-- Ensure all image files are in the `images/` folder.
+- Ensure all image files are in the `images/` folder with proper .png extensions (perfume1.png, perfume2.png, etc.)
 - If images don't load, check file paths and extensions.
 - For best viewing, use a modern web browser.
 
-## Customization
+## Deployment
 
-- Edit `style.css` to change colors and layout.
-- Modify `script.js` for additional interactivity.
-- Update `index.html` to add more perfumes or sections.
+This website is configured for deployment on Vercel. The `vercel.json` file ensures proper static file serving.
+
+### Vercel Deployment Steps:
+1. Connect your GitHub repository to Vercel
+2. Deploy the project
+3. Images should load correctly with the provided configuration
+
+### Troubleshooting Images:
+- Ensure image files are in the `images/` folder
+- Files should have proper .png extensions
+- Check browser developer tools for 404 errors
