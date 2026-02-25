@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-text">MF</div>
+            <div class="logo-full">Meesam Fragrance</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="cart">
+                <span id="cart-count">0</span>
+                <span id="cart-total">$0.00</span>
+                🛒
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div>
+            <img src="images/perfume2.jpg.png" alt="Banner Perfume" class="banner-image">
+            <h1>Discover Unique Scents</h1>
+            <p>Explore our collection of exquisite perfumes</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="perfume-gallery">
+        <h2>Our Perfume Collection</h2>
+        <div class="gallery">
+            <div class="perfume-item">
+                <img src="images/perfume1.jpg.png" alt="Perfume 1">
+                <h3>Elegant Rose</h3>
+                <p>A floral masterpiece with notes of jasmine and rose.</p>
+                <p class="price">$49.99</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="perfume-item">
+                <img src="images/perfume2.jpg.png" alt="Perfume 2">
+                <h3>Woody Essence</h3>
+                <p>A sophisticated blend of sandalwood and cedar.</p>
+                <p class="price">$59.99</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="perfume-item">
+                <img src="images/perfume3.jpg.png" alt="Perfume 3">
+                <h3>Citrus Fresh</h3>
+                <p>A refreshing citrus explosion with lemon and orange.</p>
+                <p class="price">$39.99</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="perfume-item">
+                <img src="images/perfume4.jpg.png" alt="Perfume 4">
+                <h3>Oriental Spice</h3>
+                <p>An exotic oriental fragrance with vanilla and spice.</p>
+                <p class="price">$69.99</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="perfume-item">
+                <img src="images/perfume5.jpg.png" alt="Perfume 5">
+                <h3>Mystic Bloom</h3>
+                <p>A mysterious floral blend with jasmine and musk.</p>
+                <p class="price">$54.99</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are passionate about creating unique and captivating fragrances. Each perfume is crafted with the finest ingredients to evoke emotions and memories.</p>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"Absolutely love the Elegant Rose! It's my new signature scent."</p>
+                <cite>- Sarah J.</cite>
+            </div>
+            <div class="testimonial">
+                <p>"The Woody Essence is perfect for special occasions. Highly recommend!"</p>
+                <cite>- Michael T.</cite>
+            </div>
+            <div class="testimonial">
+                <p>"Fresh and invigorating. Citrus Fresh is my go-to everyday perfume."</p>
+                <cite>- Emily R.</cite>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@meesamfragrance.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <div class="newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Get the latest updates on new fragrances and exclusive offers.</p>
+            <input type="email" placeholder="Enter your email" id="email-input">
+            <button class="btn" onclick="subscribe()">Subscribe</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Perfume Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal for perfume details -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="modal-title"></div>
+        <div id="modal-desc"></div>
+        <div id="modal-price" class="modal-price"></div>
+        <button class="btn modal-btn">Add to Cart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
